@@ -2,7 +2,6 @@
 Header file for customer class
 Includes Customer data members, constructors, getters/setters, and printInfo member function
 */
-
 #pragma once
 
 #include <iostream>
