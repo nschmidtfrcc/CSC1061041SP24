@@ -12,8 +12,8 @@ using namespace std;
 	// Written by: BC
 class Customer {
 private:
-	string name; //Costmer name
-	string phone; //Costmer phone
+	string name; //Customer name
+	string phone; //Customer phone
 	bool bought;  //Purchased data member
 
 public:
