@@ -31,28 +31,14 @@ public:
 		this->bought = bought; // Set purchase status from parameter
 	}
 
-	// Setter for customer's name
-	void setName(string& name) {
-		this->name = name; // Update customer's name
-	}
+	// Setters
+	void setName(string& name) {this->name = name;} // Update customer's name
+	void setPhone(string& phone) {this->phone = phone;} // Update customer's phone number
+	void setBought(bool bought) {this->bought = bought;} // Update purchase status
 
-	// Setter for customer's phone number
-	void setPhone(string& phone) {
-		this->phone = phone; // Update customer's phone number
-	}
-
-	// Setter for purchase status
-	void setBought(bool bought) {
-		this->bought = bought; // Update purchase status
-	}
-
-	// Getter for customer's name
+	// Getters
 	string getName() const { return name; } // Return customer's name
-
-	// Getter for customer's phone number
 	string getPhone() const { return phone; } // Return customer's phone number
-
-	// Getter for purchase status
 	bool getBought() const { return bought; } // Return purchase status
 
 	// Prints customer information
