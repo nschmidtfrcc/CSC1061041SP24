@@ -36,7 +36,7 @@ int main () {
             }
         }
 
-        cout << userIn;
+        std::cout << userIn;
     }
     return 0;
 }
