@@ -48,6 +48,3 @@ public:
 		cout << "Bought: " << (bought ? "Yes" : "No") << endl;
 	}
 };
-
-
-//Testing for dev push
