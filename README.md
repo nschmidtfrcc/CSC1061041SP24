@@ -119,6 +119,18 @@ git push -u origin <branch-name>
 ```
 <branch-name> is the name of the branch that your group checked out earlier
 
+You will next be asked for a GitHub username and password. Enter the username for your account but *don't use your account's password!*
+
+You will need to generate a Personal Access Token from your GitHub developer settings. Click on this link here: https://github.com/settings/tokens
+
+![generate token](./.assets/personaltoken.png)
+
+Select the Generate new token dropdown and choose "Generate new token classic."
+
+Checkmark all available options and press the green "Generate token" button.
+
+You will then see a string something like "ghp_u0xsOgG1y7ZdVDtW5rFEdzJLKB0H1PgYGS". *Use this as your password!*
+
 ## Syncing Your local repo with the Main Repository
 
 At the start of each class you may want to sync your local repository with the main repository.
