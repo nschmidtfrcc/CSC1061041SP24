@@ -41,7 +41,12 @@ public:
 	Vehicle();
 	////Main constructor; should be the one we use
 	Vehicle(int price, std::string model, std::string make, int year, std::string VIN, Color color, int lotTime);
-
+   
+   //print info of car
+   void displayInfo(){
+      cout << "Vehicle: " << make << ", " << model <<  ", " << year << ", " << color << ", $" << price << endl;
+   }
+   
 	//PrintInfo fx; prints ALL info in an organized manner
 	void PrintInfo();
 };
