@@ -14,13 +14,13 @@ struct Vehicle {
 
 void displayMenu() {
     cout << "Vehicle Search Menu:" << endl;
-    cout << "1-All" << endl;
-    cout << "2-Search by color" << endl;
-    cout << "3-Search by make" << endl;
-    cout << "4-Search by model" << endl;
-    cout << "5-Search by year" << endl;
-    cout << "6-Search by time on lot" << endl;
-    cout << "7-Return to main menu" << endl;
+    cout << "1) All" << endl;
+    cout << "2) Search by color" << endl;
+    cout << "3) Search by make" << endl;
+    cout << "4) Search by model" << endl;
+    cout << "5) Search by year" << endl;
+    cout << "6) Search by time on lot" << endl;
+    cout << "7) Return to main menu" << endl;
 }
 
 void displayAllVehicles(const vector<Vehicle>& vehicles) {
