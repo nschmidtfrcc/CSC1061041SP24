@@ -9,7 +9,11 @@ void displayCustomerInfo(vector<Customer> customerPass){
    int choice = 0;
    
    while(choice > 4 || choice < 1){
-      cout << "----MENU----\n" << "  1) Display All\n  2) Display Intersted\n  3) Display Not Interested\n  4) Exit" << endl;
+      cout << "---Customer Search Menu---" << endl;
+      cout << "1) Display All" << endl;
+      cout << "2) Display Intersted" << endl;
+      cout << "3) Display Not Interested" << endl;
+      cout << "4) Exit" << endl;
       cin >> choice;
       if(choice > 4 || choice < 1){
          cout << "Invalid option. Please try again";

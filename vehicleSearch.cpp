@@ -13,7 +13,7 @@ struct Vehicle {
 };
 
 void displayMenu() {
-    cout << "Vehicle Search Menu:" << endl;
+    cout << "---Vehicle Search Menu---" << endl;
     cout << "1) All" << endl;
     cout << "2) Search by color" << endl;
     cout << "3) Search by make" << endl;
