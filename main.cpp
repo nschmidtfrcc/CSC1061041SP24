@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> main
 #include "Vehicle.h"
 #include <iostream>
 #include <vector>
@@ -49,7 +45,7 @@ int main()   {
       inFS >> make;
       car.setMake(make);
       inFS >> color;
-      car.setColor(car.stringToEnumConverter(color));
+      car.setColor(Vehicle::stringToEnumConverter(color));
       inFS >> VIN;
       car.setVIN(VIN);
       inFS >> model;

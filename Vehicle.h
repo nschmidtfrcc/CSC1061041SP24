@@ -51,7 +51,7 @@ public:
 	void PrintInfo();
 
 	//Necessary for file reading -CL
-	Color stringToEnumConverter(const std::string& str);
+	static Color stringToEnumConverter(const std::string& str);
 };
 
 const std::unordered_map<std::string, Color> stringToEnum = {
