@@ -54,7 +54,7 @@ int main()   {
       inFS >> model;
       car.setModel(model);
       inFS >> color;
-      car.setColor(color);
+      car.setColor(Vehicle::stringToEnumConverter(color));
       inFS >> VIN;
       car.setVIN(VIN);
       inFS >> year;
