@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> main
 #include "Vehicle.h"
 #include <iostream>
 #include <vector>
@@ -139,6 +142,7 @@ int main()   {
 
         std::cout << userIn;
     }
+<<<<<<< HEAD
    /*
    for(int i=0; i<vehicle.size();++i){
       vehicle[i].displayInfo();
@@ -147,3 +151,10 @@ int main()   {
    
    return 0;
 }//end main()
+=======
+   
+   
+   
+   return 0;
+}//end main()
+>>>>>>> main

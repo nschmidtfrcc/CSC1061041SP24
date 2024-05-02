@@ -131,6 +131,8 @@ Checkmark all available options and press the green "Generate token" button.
 
 You will then see a string something like "ghp_u0xsOgG1y7ZdVDtW5rFEdzJLKB0H1PgYGS". *Use this as your password!*
 
+Be sure not to enter your username or password for GitHub if a popup appears when using the terminal as it does not work. Simply close out of the popup and it will prompt you again in the terminal. If you are using Git Bash to enter your password right click and select the paste option. *Ctrl+V does not work in Git Bash!* Also in Git Bash it will not show the password you pasted so avoid pasting it 100 times.
+
 ## Syncing Your local repo with the Main Repository
 
 At the start of each class you may want to sync your local repository with the main repository.
