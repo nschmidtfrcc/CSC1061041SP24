@@ -9,7 +9,7 @@ Includes Customer data members, constructors, getters/setters, and printInfo mem
 
 using namespace std;
 
-	// Written by: BC
+// Written by: BC
 class Customer {
 private:
 	string name; //Customer name
