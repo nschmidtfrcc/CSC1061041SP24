@@ -9,10 +9,10 @@ using namespace std;
 void displayCars(vector<Vehicle>& newCar)   {
    //declare variables
    int size = newCar.size();
-   int ii;
+   int i;
    //for loop to display elements of the vector
-   for(ii = 0; ii < size; ii++)   {
-      newCar.at(ii).displayInfo();
+   for(i = 0; i < size; i++)   {
+      newCar.at(i).displayInfo();
     }// end for loop*/
 }// end displayCars()
       
