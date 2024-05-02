@@ -11,14 +11,8 @@ void displayCars(vector<Vehicle>& newCar)   {
    int size = newCar.size();
    int ii;
    //for loop to display elements of the vector
-   /*for(ii = 0; ii < size; ii++)   {
-      cout << "Car price is: $" << newCar[ii].getPrice() << endl;
-      cout << "Car make is: " << newCar[ii].getMake() << endl;
-      cout << "Car color is: " << newCar[ii].getColor() << endl;
-      cout << "Car vin is: " << newCar[ii].getVIN() << endl;
-      cout << "Car model is: " << newCar[ii].getModel() << endl;
-      cout << "Car year is: " << newCar[ii].getYear() << endl;
-      cout << "The car spent " << newCar[ii].getTimeOnLot() << " days on the lot." << endl;
+   for(ii = 0; ii < size; ii++)   {
+      newCar.at(ii).displayInfo();
     }// end for loop*/
 }// end displayCars()
       
@@ -28,7 +22,6 @@ int main()   {
 
    //declare the object
    vector<Vehicle> cars;
-   int ii;
    //Declare variables
    int year;
    int timeOnLot;
