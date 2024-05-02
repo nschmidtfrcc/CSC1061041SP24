@@ -16,6 +16,7 @@ private:
 	};
 	Color color;
 	int lotTime;
+   bool sold;
 
 public:
 	//Getters (inline)

@@ -28,6 +28,7 @@ int main()   {
 
    //declare the object
    vector<Vehicle> cars;
+   vector<Vehicle> soldCars;
    int ii;
    //Declare variables
    int year;
@@ -37,6 +38,7 @@ int main()   {
    string make;
    string VIN;
    string color;
+   bool sold;
    
    // Opening File - MH
    inFS.open("vehicleList.txt");
@@ -45,25 +47,32 @@ int main()   {
    } // End file open if - MH
    
    // READ FILE - MH
-   while (!inFS.eof()) {
+   while (!inFS.eof()) { // Change: Moved order of data reading to match other txt file - MH
       Vehicle car;
-      inFS >> price;
-      car.setPrice(price);
       inFS >> make;
       car.setMake(make);
+      inFS >> model;
+      car.setModel(model);
       inFS >> color;
       car.setColor(color);
       inFS >> VIN;
       car.setVIN(VIN);
-      inFS >> model;
-      car.setModel(model);
       inFS >> year;
       car.setYear(year);
       inFS >> timeOnLot;
-      car.setTimeOnLot(timeOnLot);
+      car.setTime(timeOnLot);
+      inFS >> price;
+      car.setPrice(price);
+      inFS >> sold;
+      if (sold = true) {
+         soldCars.push_back(car);
+      } else {
+         cars.push_back(car);
+      } // End vector pushing - MH
+      
       //cout << car.getPrice() << endl; // Dev print - MH
-      cars.push_back(car);
-      cout << cars.size() << endl;
+      cout << cars.size() << endl; // Dev print - MH
+      cout << soldCars.size() << endl; // Dev print - MH
    } // End read file while - MH
    if (!inFS.eof()) {
       cout << "ERROR: INPUT FAILURE BEFORE REACHING END OF FILE" << endl;
