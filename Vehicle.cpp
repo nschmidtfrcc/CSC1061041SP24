@@ -14,7 +14,7 @@ Color Vehicle::stringToEnumConverter(const std::string& str) {
 }
 
 void Vehicle::displayInfo() {
-   std::cout << "Vehicle: " << make << ", " << model <<  ", " << year << ", " << color << ", $" << price << std::endl;
+   std::cout << "Vehicle: " << make << ", " << model <<  ", " << year << ", " << color << ", " << lotTime << ", $" << price << std::endl;
 }
 
 void Vehicle::PrintInfo() {
