@@ -49,7 +49,7 @@ int main()   {
       inFS >> make;
       car.setMake(make);
       inFS >> color;
-      car.setColor(car.stringToEnumConverter(color));
+      car.setColor(Vehicle::stringToEnumConverter(color));
       inFS >> VIN;
       car.setVIN(VIN);
       inFS >> model;
