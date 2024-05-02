@@ -131,12 +131,6 @@ int main()   {
 
         std::cout << userIn;
     }
-
-   /*
-   for(int i=0; i<vehicle.size();++i){
-      vehicle[i].displayInfo();
-    
-    }*/
    
    return 0;
 }//end main()
