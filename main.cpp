@@ -45,7 +45,7 @@ int main()   {
       inFS >> make;
       car.setMake(make);
       inFS >> color;
-      car.setColor(color);
+      car.setColor(car.stringToEnumConverter(color));
       inFS >> VIN;
       car.setVIN(VIN);
       inFS >> model;
@@ -53,7 +53,7 @@ int main()   {
       inFS >> year;
       car.setYear(year);
       inFS >> timeOnLot;
-      car.setTimeOnLot(timeOnLot);
+      car.setTime(timeOnLot);
       //cout << car.getPrice() << endl; // Dev print - MH
       cars.push_back(car);
       cout << cars.size() << endl;

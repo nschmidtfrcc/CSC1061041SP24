@@ -3,6 +3,11 @@
 #define VEHICLE_H
 
 #include <string>
+#include <unordered_map>
+
+enum Color {
+	Red, Blue, White, Silver, Black
+};
 
 class Vehicle {
 private:
@@ -11,9 +16,6 @@ private:
 	std::string make;
 	int year;
 	std::string VIN;
-	enum Color {
-		Red, Blue, White, Silver, Black
-	};
 	Color color;
 	int lotTime;
 
@@ -36,6 +38,14 @@ public:
 	void setColor(Color color) { this->color = color; }
 	void setTime(int time) { lotTime = time; }
 
+	static const std::unordered_map<std::string, Color> stringToEnum = {
+		{"Red", Red},
+		{"Blue", Blue},
+		{"White", White},
+		{"Silver", Silver},
+		{"Black", Black}
+	};
+
 	//Constructors
 	////Default constructor; should indicate error in input and be used for testing
 	Vehicle();
@@ -47,6 +57,9 @@ public:
    
 	//PrintInfo fx; prints ALL info in an organized manner
 	void PrintInfo();
+
+	//Necessary for file reading -CL
+	Color stringToEnumConverter(const std::string& str);
 };
 
 #endif
