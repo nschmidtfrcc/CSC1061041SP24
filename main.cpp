@@ -109,11 +109,11 @@ int main()   {
         //Printing menu RR
         std::cout << "Welcome to Desktop Database." << std::endl << std::endl;
         std::cout << "What would you like to see? Enter the number to the left of your selection." << std::endl;
-        std::cout << "1 - Search available vehicles" << std::endl;
-        std::cout << "2 - Search sold vehicles" << std::endl;
-        std::cout << "3 - Customer info" << std::endl;
-        std::cout << "4 - Sales" << std::endl;
-        std::cout << "5 - Quit" << std::endl;
+        std::cout << "1) Search available vehicles" << std::endl;
+        std::cout << "2) Search sold vehicles" << std::endl;
+        std::cout << "3) Customer info" << std::endl;
+        std::cout << "4) Sales" << std::endl;
+        std::cout << "5) Quit" << std::endl;
 
         //Initializing validation var RR
         bool validIn = false;
