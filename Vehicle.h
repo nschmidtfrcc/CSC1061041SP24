@@ -38,14 +38,6 @@ public:
 	void setColor(Color color) { this->color = color; }
 	void setTime(int time) { lotTime = time; }
 
-	static const std::unordered_map<std::string, Color> stringToEnum = {
-		{"Red", Red},
-		{"Blue", Blue},
-		{"White", White},
-		{"Silver", Silver},
-		{"Black", Black}
-	};
-
 	//Constructors
 	////Default constructor; should indicate error in input and be used for testing
 	Vehicle();
@@ -60,6 +52,14 @@ public:
 
 	//Necessary for file reading -CL
 	Color stringToEnumConverter(const std::string& str);
+};
+
+const std::unordered_map<std::string, Color> stringToEnum = {
+    {"Red", Red},
+    {"Blue", Blue},
+    {"White", White},
+    {"Silver", Silver},
+    {"Black", Black}
 };
 
 #endif
